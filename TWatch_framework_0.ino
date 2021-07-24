@@ -70,7 +70,7 @@ void loop() {
       case 5:
         appSetTime();
         break;
-      case 6:
+      case 11:
         wifiScanner();
         break;
     }
