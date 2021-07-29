@@ -8,8 +8,8 @@
 // 3) in the main routine in TWatch_framework, add a case to the switch statement to call your app routine.
 
 
-const int maxApp = 12; // number of apps
-String appName[maxApp] = {"Clock", "Jupiter", "Accel", "Battery", "Touch", "Set Time", "Motor", "Temp", "Bitcoin", "Int Time", "Exper", "Wifi Scan"}; // app names
+const int maxApp = 13; // number of apps
+String appName[maxApp] = {"Clock", "Jupiter", "Accel", "Battery", "Touch", "Set Time", "Motor", "Temp", "Bitcoin", "Int Time", "Exper", "Wifi Scan", "WiFi Sniff"}; // app names
 
 uint8_t modeMenu() {
   int mSelect = 0; // The currently highlighted app

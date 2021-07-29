@@ -5,6 +5,7 @@
 
 #include "config.h"
 #include <soc/rtc.h>
+#include "esp_wifi.h"
 
 TTGOClass *ttgo;
 
@@ -29,7 +30,7 @@ void setup() {
 
   //Synchronize time to system time
   ttgo->rtc->syncToSystem();
-  
+
   displayTime(true); // Our GUI to show the time
   ttgo->openBL(); // Turn on the backlight
 
@@ -72,6 +73,9 @@ void loop() {
         break;
       case 11:
         wifiScanner();
+        break;
+      case 12:
+        wifiSniffer();
         break;
     }
     displayTime(true);
